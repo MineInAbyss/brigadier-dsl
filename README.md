@@ -6,10 +6,25 @@
 
 [wiki-motivation]: https://github.com/nicolaic/brigadier-dsl/wiki/Motivation
 
-# Brigadier DSL [![License][license-badge]](/LICENSE) [![Kotlin CI with Gradle][actions-badge]][actions-gradle]
+[badge-maven]: https://img.shields.io/maven-metadata/v?metadataUrl=https://repo.mineinabyss.com/releases/com/mineinabyss/geary-papermc-core/maven-metadata.xml
+
+[url-maven]: https://repo.mineinabyss.com/#/releases/com/mineinabyss/geary-papermc-core
+
+<div align="center">
+
+# Brigadier DSL
+
+[![License][license-badge]](/LICENSE)
+
+[//]: # ([![Package][badge-maven]][url-maven])
+
+</div>
+
 
 Brigadier DSL is a Kotlin library that adds a new fluent DSL on top of [Mojang's Brigadier][brigadier-github], that
 makes it easier to write commands. For more information read the [Motivation][wiki-motivation] page.
+
+This project is a fork of [nicolaic/brigader-dsl](https://github.com/nicolaic/brigadier-dsl). We have integrated it into our shared gradle tasks and plan on keeping it up to date with the latest Minecraft version.
 
 ### Features
 
@@ -25,7 +40,7 @@ makes it easier to write commands. For more information read the [Motivation][wi
 
 ```kotlin
 repositories {
-    mavenCentral()
+    maven("https://repo.mineinabyss.com/releases")
 }
 ```
 

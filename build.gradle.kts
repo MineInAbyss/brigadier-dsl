@@ -1,14 +1,13 @@
 plugins {
-    kotlin("jvm") version "1.4.21"
-    `java-library`
+    id("com.mineinabyss.conventions.kotlin")
+    id("com.mineinabyss.conventions.papermc")
+    id("com.mineinabyss.conventions.publication")
 }
 
 repositories {
-    jcenter()
-    maven(url = "https://libraries.minecraft.net")
+    maven("https://libraries.minecraft.net")
 }
 
 dependencies {
-    implementation(kotlin("stdlib-jdk8"))
     api("com.mojang:brigadier:1.0.17")
 }
